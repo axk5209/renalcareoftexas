@@ -788,6 +788,46 @@ http://www.tooplate.com/view/2098-health
     color: #ffffff;
   }
 
+  /*---------------------------------------
+      Reach             
+  -----------------------------------------*/
+
+  #reach {
+    padding-top: 100px;
+  }
+
+  #reach label {
+    color: #393939;
+    font-weight: 500;
+  }
+
+  #reach .form-control {
+    background: #f9f9f9;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    transition: all ease-in-out 0.4s;
+  }
+
+  #reach input,
+  #reach select {
+    height: 45px;
+  }
+
+  #reach button#cf-submit {
+    background: #a5c422;
+    color: #ffffff;
+    font-weight: 600;
+    height: 55px;
+  }
+
+  #reach button#cf-submit:hover {
+    background: #393939;
+    color: #ffffff;
+  }
 
   /*---------------------------------------
      FOOTER              
@@ -1013,7 +1053,11 @@ http://www.tooplate.com/view/2098-health
     #appointment-form {
       padding-top: 4em;
       padding-bottom: 4em;
-    }
+	}
+	#reach-form {
+		padding-top: 4em;
+		padding-bottom: 4em;
+	  }
 
     footer {
       padding-top: 60px;
