@@ -1,59 +1,7 @@
-// const contactForm = document.getElementById("reach-form")
-// contactForm.addEventListener("submit", (event) =>
-// {
-// 	console.log("submitted")
-// 	return false
-// 	// event.preventDefault()
-
-// 	// const name = document.getElementById("name")
-// 	// const email = document.getElementById("email")
-// 	// const phone = document.getElementById("phone")
-// 	// const message = document.getElementById("message")
-
-// 	// console.log(name.value)
-// 	// console.log(email.value)
-// 	// console.log(phone.value)
-// 	// console.log(message.value)
-
-// 	// name.value = ""
-// 	// email.value = ""
-// 	// phone.value = ""
-// 	// message.value = ""
-
-	
-// 	// console.log("submitted")
-// })
-
-
-
-// const submitButton = document.getElementById("cf-submit")
-// submitButton.addEventListener("click", (event) =>
-// {
-// 	console.log("submitted")
-// 	// event.preventDefault()
-
-// 	// const name = document.getElementById("name")
-// 	// const email = document.getElementById("email")
-// 	// const phone = document.getElementById("phone")
-// 	// const message = document.getElementById("message")
-
-// 	// console.log(name.value)
-// 	// console.log(email.value)
-// 	// console.log(phone.value)
-// 	// console.log(message.value)
-
-// 	// name.value = ""
-// 	// email.value = ""
-// 	// phone.value = ""
-// 	// message.value = ""
-
-	
-// 	// console.log("submitted")
-// })
-
 if ( window.history.replaceState ) {
 	window.history.replaceState( null, null, window.location.href );
 }
+
 const name = document.getElementById("name")
 const email = document.getElementById("email")
 const phone = document.getElementById("phone")
@@ -64,14 +12,6 @@ function submitContactForm (event) {
 	event.preventDefault()
 	submitButton.innerText = "Sending..."
 	submitButton.disabled = true
-	console.log(name.value)
-	console.log(email.value)
-	console.log(phone.value)
-	console.log(message.value)
-						
-						// <span style = "font-size:medium">Dear Renal Care, </span>
-						// <br>
-						// <br>
 	const body = `
 					<html>
 						<span style = "font-size:large;font-weight:bold;">Message</span>
@@ -93,14 +33,13 @@ function submitContactForm (event) {
 						<span style = "font-size:medium">${phone.value}</span>
 						
 					</html>`
-	//const body = `Name: ${name.value}\n\nEmail: ${email.value}\n\nPhone Number: ${phone.value}\n\nMessage: ${message.value}`
 	console.log(body)
 
 	Email.send({
 		Host : "smtp.gmail.com",
 		Username : "renalcarelandingpage@gmail.com",
 		Password : "Renal@Texas2020",
-		To : 'axk45209@gmail.com',
+		To : 'renalcareoftexas@gmail.com',
 		From : "renalcarelandingpage@gmail.com",
 		Subject : "Landing Page Contact Request",
 		Body : body
@@ -114,17 +53,4 @@ function submitContactForm (event) {
 		submitButton.disabled = false
 	}
 	);
-
-
-	// setTimeout(() => {
-	// 	name.value = ""
-	// 	email.value = ""
-	// 	phone.value = ""
-	// 	message.value = ""
-	// 	messageBlock.style.display = "block"
-	// 	submitButton.innerText = "Submit"
-	// 	submitButton.disabled = false
-	// }, 5000)
-
-
 }
