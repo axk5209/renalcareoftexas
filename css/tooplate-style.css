@@ -9,7 +9,8 @@ http://www.tooplate.com/view/2098-health
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
   body {
-    background: #ffffff;
+	background: #ffffff;
+	/* background-image: url(../images/renal-better-background.jpg); */
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
@@ -186,7 +187,7 @@ http://www.tooplate.com/view/2098-health
 
 
   #about, #team, #news,
-  #news-detail {
+  #news-detail, #insurance {
     position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -501,7 +502,7 @@ http://www.tooplate.com/view/2098-health
     border-radius: 0 0 10px 10px;
     position: relative;
     overflow: hidden;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .team-info {
