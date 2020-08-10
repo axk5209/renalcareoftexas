@@ -9,8 +9,8 @@ http://www.tooplate.com/view/2098-health
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 
   body {
-	background: #ffffff;
-	/* background-image: url(../images/renal-better-background.jpg); */
+	/* background: #ffffff; */
+	background-image: url(../images/renal-better-background.jpg);
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
   }
